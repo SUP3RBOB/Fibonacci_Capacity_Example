@@ -48,7 +48,7 @@ jobs:
 
         mkdir -p results
 
-        locust -f locustfile.py \
+        python -m locust -f locustfile.py \
 
           --headless \
 
