@@ -49,7 +49,8 @@ jobs:
         mkdir -p results
 
         locust -f locustfile.py \
-
+          --master-host localhost \
+          --master-port 8089 \
           --headless \
 
           --users 10 \
